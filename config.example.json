@@ -1,0 +1,34 @@
+{
+  "fairface_images": "/PATH/TO/YOUR/DATASET",
+  "fairface_train_csv": "/PATH/TO/YOUR/DATASET",
+  "fairface_val_csv": "/PATH/TO/YOUR/DATASET",
+  "flickr8k_images": "/PATH/TO/YOUR/DATASET",
+  "flickr8k_captions": "/PATH/TO/YOUR/DATASET",
+  "coco_images": "/PATH/TO/YOUR/DATASET",
+  "coco_captions": "/PATH/TO/YOUR/DATASET",
+  "seed": 42,
+  "train_cap": 20000,
+  "val_cap": null,
+  "clip_batch_size": 128,
+  "embed_model": "ViT-B-32",
+  "stage1_max_pairs": 3000,
+  "stage1_epochs": 100,
+  "stage1_batch_size": 32,
+  "stage3_epochs": 5,
+  "stage4_epochs": 30,
+  "head_batch_size": 256,
+  "head_learning_rate": 0.0001,
+  "requested_k": {
+    "age": 5,
+    "race": 5
+  },
+  "lambda_fair": {
+    "age": 0.5,
+    "race": 1.0
+  },
+  "tau": 0.07,
+  "procrustes_identity_regularizer": 1.0,
+  "stage1_patience": 12,
+  "stage1_flickr8k_max_pairs": 8000,
+  "stage1_coco_max_pairs": 20000
+}

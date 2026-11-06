@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+results/
+.DS_Store
+
+# Local datasets and experiment files
+datasets/
+data/
+results/
+.venv/
+__pycache__/
+*.pyc
+*.pt
+*.pth
+*.safetensors
+*.zip
+*.npy
+*.npz
+*.log
+.env
+config.json
+zhang_reproduction/exp/
