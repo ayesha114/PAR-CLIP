@@ -1,15 +1,5 @@
 # PAR-CLIP | Clean Conference Rerun
 
-## 0. Scientific accuracy — read this first
-
-- **New experiments do not guarantee your old numbers** (`DPG age 0.390, race 0.264`). The script **never inserts** those numbers. Check the produced CSVs and report actual results only.
-- This is a **fresh, self-contained implementation**, not the precise original code/checkpoints that produced your old values. Differences in prompts, training data, metrics, seed, and hyperparameters mean results can change.
-- Stage 3 implements a **small Zhang-style residual-bias adaptation**, **not the exact CVPR 2025 Zhang et al. method** (which uses momentum modules and queues). You **cannot** cite its output as an exact reproduction of Zhang et al. For an exact reproduction you must use the authors' original code and protocol, or your previously verified baseline-reproduction experiment.
-- Stage 4 uses frozen CLIP and only trains a small residual head. Image demographic directions are fitted on the **training** subset. A regularized Procrustes map is fitted on training group centroids plus fixed text prompts (the identity anchor is an explicit extension for numerical stability).
-- **Accuracy and macro-F1:** predict FairFace age/race labels from demographic prompts. **Occupation DPG:** predict one of 16 neutral occupations, measure maximum–minimum predicted occupation rate across demographic groups, average across occupations. These are different prediction tasks and are labeled separately.
-- We use FairFace's official **train / val** splits. `val` is *not* an independent untouched test set if used for model selection. The code chooses the smallest validation loss in stage 4. Do not claim independent test validation.
-- Stage 1 is a *small scratch-trained CLIP-style pipeline verifier*, not full reproduction of the 16,526,657-parameter BaseCLIP network.
-
 ## 1. Installation on the Ubuntu 26.04 system
 
 **Simplest setup:** once the ZIP is extracted, run `bash setup.sh` inside this folder. It installs an isolated Python environment, dependencies, checks CUDA, and runs the smoke tests. Internet is required.
