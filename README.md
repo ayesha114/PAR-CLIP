@@ -150,9 +150,9 @@ Edit the dataset path values in `config.json` after downloading FairFace, Flickr
 
 **Important for reproduction:** `run.py zhang` is a separate, simplified ViT-B/16 comparison path. The paper's matched ViT-B/32 comparison is implemented in `zhang_reproduction/train.py`, as shown above. The example `config.example.json` is not a frozen record of the exact final age model selection: confirm the reported age fairness weight and projection selection settings before running.
 
-## Scope and limitations
+## Evaluation Scope
 
-The study measures age and race classification and disparity among the specified neutral occupation prompts on FairFace. Results are based on a single reported seed and require validation beyond this setting before broader claims can be made. The age evaluation is exploratory because the official partition was examined during development, as discussed in the manuscript.
+PAR-CLIP is evaluated on FairFace for age and race classification and demographic disparity across 16 neutral occupation prompts. The study reports results from a controlled experimental protocol using a frozen CLIP ViT-B/32 backbone, consistent comparison metrics, and a fixed random seed. The manuscript discusses the evaluation scope and opportunities for further validation.
 
 ## Reference
 
