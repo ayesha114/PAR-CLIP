@@ -1,7 +1,5 @@
 # PAR-CLIP | Clean Conference Rerun
 
-**One folder. Four stages. No journal-only experiments.** Reimplementation of the methodology described in your submitted PAR-CLIP conference manuscript. Run on Ubuntu with NVIDIA GPU.
-
 ## 0. Scientific accuracy — read this first
 
 - **New experiments do not guarantee your old numbers** (`DPG age 0.390, race 0.264`). The script **never inserts** those numbers. Check the produced CSVs and report actual results only.
