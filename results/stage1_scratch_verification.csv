@@ -1,0 +1,3 @@
+stage,dataset,train_pairs,val_pairs,test_pairs,best_epoch,max_epochs,trainable_parameters,image_to_text_R1,image_to_text_R5,text_to_image_R1,text_to_image_R5
+1_scratch_pipeline_new_architecture,flickr8k,6400,800,800,3,100,13616832,0.0062500000931322575,0.042500000447034836,0.0062500000931322575,0.04500000178813934
+1_scratch_pipeline_new_architecture,coco,16000,2000,2000,6,100,14044992,0.011500000022351742,0.05000000074505806,0.00800000037997961,0.05400000140070915

@@ -1,0 +1,7 @@
+attribute,method,accuracy,macro_f1,occupation_dpg
+Age,Baseline CLIP,0.455724,0.480732,0.114423
+Age,Zhang ViT-B/32 (matched-budget),0.454902,0.480902,0.114019
+Age,PAR-CLIP,0.591473,0.557155,0.044495
+Race,Baseline CLIP,0.624247,0.623556,0.061025
+Race,Zhang ViT-B/32 (matched-budget),0.623517,0.622844,0.061367
+Race,PAR-CLIP,0.710973,0.703227,0.02646

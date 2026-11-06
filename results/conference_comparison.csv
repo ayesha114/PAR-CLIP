@@ -1,0 +1,3 @@
+attribute,baseline_accuracy,parclip_accuracy,baseline_macro_f1,parclip_macro_f1,baseline_occupation_dpg,parclip_occupation_dpg,dpg_reduction_percent
+age,0.372102,0.266934,0.422044,0.139573,0.134556,0.035678,73.48
+race,0.616852,0.200201,0.623512,0.097839,0.057256,0.022813,60.16
