@@ -1,0 +1,21 @@
+{
+  "attribute": "race",
+  "backbone": "ViT-B-32",
+  "train_n": 16000,
+  "internal_val_n": 4000,
+  "test_n": 10954,
+  "batch_size": 256,
+  "max_epochs": 30,
+  "learning_rate": 0.0001,
+  "seed": 42,
+  "tau": 0.07,
+  "zhang_alpha": 0.3,
+  "momentum": 0.995,
+  "queue_size": 65536,
+  "momentum_mix": 0.4,
+  "evaluation": "same PAR-CLIP occupation DPG / demographic accuracy and macro-F1",
+  "input": "cached normalized CLIP embeddings; Zhang official network/loss adapted to matched budget",
+  "best_epoch": 1,
+  "test_evaluated_after_internal_selection": true,
+  "limitation": "Not exact published training: normalized cached CLIP inputs, matched budget and task-specific demographic evaluation. Original reported ABLE/MaxSkew are different metrics."
+}

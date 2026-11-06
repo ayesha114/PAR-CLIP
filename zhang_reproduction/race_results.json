@@ -1,0 +1,20 @@
+{
+  "attribute": "race",
+  "method": "Zhang et al. matched-budget cached-feature adaptation",
+  "backbone": "ViT-B-32",
+  "best_epoch": 1,
+  "accuracy": 0.623517,
+  "macro_f1": 0.622844,
+  "occupation_dpg": 0.061367,
+  "n": 10954,
+  "groups": {
+    "0": 2085,
+    "1": 1556,
+    "2": 1623,
+    "3": 1550,
+    "4": 1415,
+    "5": 1516,
+    "6": 1209
+  },
+  "n_occupation_probes": 16
+}

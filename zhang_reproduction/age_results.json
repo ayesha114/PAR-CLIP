@@ -1,0 +1,22 @@
+{
+  "attribute": "age",
+  "method": "Zhang et al. matched-budget cached-feature adaptation",
+  "backbone": "ViT-B-32",
+  "best_epoch": 1,
+  "accuracy": 0.454902,
+  "macro_f1": 0.480902,
+  "occupation_dpg": 0.114019,
+  "n": 10954,
+  "groups": {
+    "0": 199,
+    "1": 1356,
+    "2": 1181,
+    "3": 3300,
+    "4": 2330,
+    "5": 1353,
+    "6": 796,
+    "7": 321,
+    "8": 118
+  },
+  "n_occupation_probes": 16
+}
